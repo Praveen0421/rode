@@ -17,23 +17,31 @@
           colors: {
             red: '#DC1E34',
             lightgold: '#AC9870',
-            textcolor: '#767676'
+            textcolor: '#767676',
+            lightblack: '#0a0a0a47',
+            lightgrey: '#F8F9FF',
           },
           height: {
             '56': '700px',
-            '58': '850px'
+            '58': '850px',
+            '45': '450px'
+
           },
           screens: {
             'mobile': '0px',
             'tablet': '640px',
-            // => @media (min-width: 640px) { ... }
+            'tabletX': '743px',
             'smallaptop': '1000px',
             'laptop': '1024px',
-            // => @media (min-width: 1024px) { ... }
-
             'desktop': '1200px',
-            // => @media (min-width: 1280px) { ... }
           },
+          fontSize: {
+            '4xl': ['32px'],
+            'sm': ['28px'],
+            'xs': ['15px']
+          },
+
+
         }
       }
     }
@@ -79,7 +87,7 @@
   <section class="mobile:flex-col mobile:items-center mobile:justify-center">
     <!-- hero-1 -->
     <div
-      class="flex  mobile:flex-col mobile:items-center mobile:justify-center mobile:pb-14 relative laptop:overflow-hidden laptop:h-56 w-full mobile:bg-black ">
+      class="flex  mobile:flex-col mobile:items-center mobile:justify-center  relative laptop:overflow-hidden laptop:h-56 w-full mobile:bg-black ">
       <div>
         <img class=" mobile:hidden smallaptop:block w-full h-56 laptop:h-58"
           src="IMG/RODEX_Prelaunch-Website-Banners_1920x700_2.jpg" alt="">
@@ -90,7 +98,7 @@
         class="flex flex-col items-center smallaptop:absolute smallaptop:top-60 smallaptop:right-10 desktop:right-64">
         <img class="mobile:h-96 smallaptop:h-48" src="img/rode-x-text-03.svg" alt="RODE">
         <button
-          class=" h-10 w-40 mobile:bg-red desktop:bg-black border-0 rounded-full font-semibold text-lg desktop:text-red mobile:text-black relative top-8">LEARN
+          class=" h-10 w-40 mobile:bg-red desktop:bg-black border-0 rounded-full font-semibold text-lg desktop:text-red mobile:text-black relative mobile:bottom-5 smallaptop:top-8">LEARN
           MORE</button>
       </div>
     </div>
@@ -106,7 +114,8 @@
         class="flex flex-col items-center smallaptop:absolute smallaptop:top-56 smallaptop:right-10 desktop:right-64">
         <img class="mobile:pb-6 smallaptop:h-18 smallaptop:pb-8" src="img/RODECasterProII_PL_PI_01.png" alt="NTH-100">
         <h1 class="text-center font-poppins text-white text-2xl font-semibold pb-2">The Revolution Is Here</h1>
-        <p class="text-textcolor smallaptop:text-center text-lg pb-12"> The RØDECaster Pro II is the
+        <p class=" relative pl-5 text-textcolor  smallaptop:text-center text-lg pb-12"> The RØDECaster
+          Pro II is the
           world's most powerfull
           all-in-one<br class="mobile:hidden smallaptop:block">audio
           solution for
@@ -132,11 +141,14 @@
           src="img/rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb-800x700-6488d79.png" alt="">
       </div>
       <div class="flex flex-col items-center smallaptop:absolute smallaptop:top-56 smallaptop:left-0 desktop:left-64">
-        <img class="mobile:pt-6 mobile:h-28 smallaptop:h-18 pb-8" src="img/NTH-100_PL_P_RGB_01.png" alt="NT-USB">
+        <img class="mobile:pt-6 smallaptop:h-18 pb-8" src="img/NTH-100_PL_P_RGB_01.png" alt="NT-USB">
         <h1 class="text-center font-poppins  text-2xl font-medium pb-2">Your Search For The Perfect
           Headphones
           Is<br>Over</h1>
-        <p class="text-textcolor smallaptop:text-center text-lg pb-12">Experience sound like never before with the
+        <p class=" relative pl-5 text-textcolor  smallaptop:text-center text-lg pb-12">Experience
+          sound like never
+          before with
+          the
           NTH-100s.
           Exceptional<br class="mobile:hidden smallaptop:block">
           sonic
@@ -157,24 +169,234 @@
         <img class="mobile:block smallaptop:hidden" src="img/rode-nt-usb-webheader-v7-800x700-rgb.jpg" alt="">
       </div>
       <div
-        class="flex flex-col items-center smallaptop:absolute smallaptop:top-56 smallaptop:right-10 desktop:right-64">
-        <img class="mobile:pt-6 mobile:h-28 smallaptop:h-18 pb-8" src="img/NT-USB_PL_P_01.png" alt="RODE X">
+        class="flex flex-col items-center smallaptop:absolute smallaptop:top-62 smallaptop:right-10 desktop:right-32">
+        <img class="mobile:pt-6  smallaptop:h-18 pb-8" src="img/NT-USB_PL_P_01.png" alt="RODE X">
         <h1 class="text-center font-poppins  text-2xl font-medium pb-2">Studio-Quality Recording, Made
           Simple
         </h1>
-        <p class="text-textcolor smallaptop:text-center text-lg pb-12">
+        <p class=" relative pl-5 text-textcolor  smallaptop:text-center text-lg pb-12">
           The NT-USB is a studio-quality USB condenser microphone that<br class="mobile:hidden smallaptop:block">
           offers impeccable audio, elegant looks and premium features, all in<br class="mobile:hidden smallaptop:block">
           an easy-to-use form factor, the NT-USB will have you sounding like<br class="mobile:hidden smallaptop:block">
           a pro in seconds.
         </p>
         <div class="flex items-center justify-center">
-          <p class="text-lightgold font-semibold text-lg">LEARN MORE ></p><button
-            class=" h-10 w-40 bg-black border-0 rounded-full font-semibold text-lg text-white bg-lightgold">
-            BUY NOW</button>
+          <p class="text-lightgold font-semibold text-lg">LEARN MORE ></p>
+          <button class=" h-10 w-40 bg-black border-0 rounded-full font-semibold text-lg text-white bg-lightgold">
+            BUY NOW
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- Explore The RØDE Range -->
+    <section class="flex flex-col items-center">
+      <div>
+        <h2 class="relative text-textcolor text-4xl font-bold py-6">Explore The RØDE Range</h2>
+      </div>
+      <div class=" relative flex flex-col items-center justify-center">
+        <div class="relative flex flex-col mobile:mx-4 smallaptop:mx-20">
+          <img src="img/images_page_1_modules_5357_microphones-module-1200x300-rgb.png" alt="">
+          <div
+            class="flex items-center absolute hover:bg-lightblack transition-all ease-in-out duration-300   h-full w-full">
+            <img src="img/images_page_1_modules_5364_microphones-text.svg" alt="">
+          </div>
+        </div>
+        <div class="relative flex flex-col mobile:my-4 smallaptop:my-6 mobile:mx-4 smallaptop:mx-20">
+          <img src="img/images_page_1_modules_5359_interfaces-module-2022-1200x300-rgb.jpg" alt="">
+          <div
+            class="flex items-center absolute hover:bg-lightblack transition-all ease-in-out duration-300   h-full w-full">
+            <img src="img/images_page_1_modules_5366_interfaces-text.svg" alt="">
+          </div>
+        </div>
+        <div class="relative flex flex-col mobile:mb-4 smallaptop:mb-6 mobile:mx-4 smallaptop:mx-20">
+          <img src="img/images_page_1_modules_5361_software-module-2021-1200x300-rgb.png" alt="">
+          <div
+            class="flex items-center absolute hover:bg-lightblack transition-all ease-in-out duration-300   h-full w-full">
+            <img src="img/images_page_1_modules_5365_software-text.svg" alt="">
+          </div>
+        </div>
+        <div class="relative flex flex-col mobile:mx-4 smallaptop:mx-20">
+          <img src="img/images_page_1_modules_5370_accessories-module-2021-1200x300-rgb.png" alt="">
+          <div
+            class="flex items-center absolute hover:bg-lightblack transition-all ease-in-out duration-300   h-full w-full">
+            <img src="img/images_page_1_modules_5368_accessories-text.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lightgold text-4xl font-bold py-6">Latest From The RØDE Blog</h4>
+      </div>
+    </section>
+
+    <!-- Latest From The RØDE Blog -->
+
+    <section class="bg-lightgrey pb-20">
+      <div class="flex mobile:flex-col tabletX:flex ">
+
+        <div
+          class="flex mobile:flex-col  tabletX:flex-row mobile:items-center tabletX:items-start justify-center  mt-12">
+
+          <div class="flex flex-col items-center  bg-white pb-48 mx-3">
+            <h2 class="text-center text-sm">XLR vs USB Microphones: Which is Best<br> for You?</h2>
+            <img class="relative h-45 top-10" src="img/thumbnail2.jpg" alt="">
+            <p class="relative top-24 h-10 text-center">We explore the differences between XLR and USB microphones,<br>
+              the advantages
+              of
+              each
+              and which type is best
+              suited to your<br> needs.</p>
+            <button
+              class="relative top-40 h-10 h-10 w-40 bg-black border-0 rounded-full font-semibold text-lg text-white bg-lightgold">
+              LEARN MORE</button>
+
+          </div>
+
+          <div class="flex flex-col items-center bg-white pb-36 mx-3 mobile:mt-5 tabletX:mt-0">
+            <h2 class="text-center text-sm">The Difference Between Large-Diaphragm<br> and
+              Small-Diaphragm
+              Condenser<br>
+              Microphones
+            </h2>
+            <img class="h-45" src="img/thumbnail6.jpeg" alt="">
+            <p class="relative top-14 text-center">We explore the difference between large- and small-diaphragm<br>
+              condenser
+              microphones,
+              and what each is best
+              used for.</p>
+            <button
+              class="relative top-28 h-10 w-40 bg-black border-0 rounded-full font-semibold text-lg text-white bg-lightgold">
+              LEARN MORE</button>
+
+          </div>
+
+        </div>
+
+        <div class="flex mobile:flex-col tabletX:flex-row  justify-center items-center mt-5">
+
+          <div class="flex flex-col items-center bg-white pb-36 mx-3">
+            <h2 class="text-center text-sm">What is a Condenser Microphone and<br> When to Use One
+            </h2>
+            <img class="relative h-45 top-4" src="img/thumbnail.jpg" alt="">
+            <p class="relative top-14 text-center">Learn more about the different types of condenser mics, how they<br>
+              work and the
+              best
+              applications for using
+              them.</p>
+            <button
+              class="relative top-28  h-10 w-40 bg-black border-0 rounded-full font-semibold text-lg text-white bg-lightgold">
+              LEARN MORE</button>
+
+          </div>
+
+          <div class="flex flex-col items-center bg-white pb-36 mx-3 mobile:mt-5 tabletX:mt-0">
+            <h2 class="text-center text-sm">Firmware Version 1.0.7 for the<br> RØDECaster Pro II is Available Now
+            </h2>
+            <img class="relative h-45 top-4" src="img/rode-rodecaster-pro-II-on-black-front-580x509.jpg" alt="">
+            <p class="relative top-14 text-center">Firmware version 1.0.7 includes key feature additions, such as<br>
+              custom routing for
+              USB
+              and Bluetooth
+              outputs, and more.</p>
+            <button
+              class="relative top-28 h-10 w-40 bg-black border-0 rounded-full font-semibold text-lg text-white bg-lightgold">
+              LEARN MORE</button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+    <!-- footer -->
+    <footer class="flex justify-center  mobile:pb-32 smallaptop:pb-28 mobile:pt-6 smallaptop:pt-24">
+      <div class="flex flex-col border-t border-textcolor mobile:w-full  items-center">
+        <div
+          class="flex mobile:flex-col mobile:items-center smallaptop:items-start smallaptop:flex-row  pt-16 border-b border-textcolor smallaptop:px-0 desktop:px-24 mobile:pb-8 smallaptop:pb-5 w-full">
+          <div class="relative mobile:pb-6 smallaptop:pb-0 mobile:right-0 smallaptop:right-5 desktop:right-20"><img
+              src="img/RODE_logo_142x85_desktop_light_mode.png" alt=""></div>
+          <div
+            class="mobile:hidden tablet:block relative  tablet:flex mobile:left-0  smallaptop:left-14 desktop:left-20">
+
+            <ul class="text-base">
+              <li class="pb-3 font-medium">Products</li>
+              <li class="pb-3">Microphones</li>
+              <li class="pb-3">Headphones</li>
+              <li class="pb-3">Interfaces and Mixers</li>
+              <li class="pb-3">Accessories</li>
+              <li class="pb-3">Software</li>
+              <li class="pb-3">Apparel</li>
+            </ul>
+
+            <ul class="text-base mx-10">
+              <li class="pb-3 font-medium">Support</li>
+              <li class="pb-3">Contact RØDE</li>
+              <li class="pb-3">Service Centre</li>
+              <li class="pb-3">Warranty</li>
+              <li class="pb-3">Where to Buy</li>
+            </ul>
+
+            <ul class="text-base ml-10">
+              <li class="pb-3 font-medium">Company</li>
+              <li class="pb-3">About RØDE</li>
+              <li class="pb-3">News and Info</li>
+              <li class="pb-3">Job Opportunities</li>
+              <li class="pb-3 font-medium">Account</li>
+              <li class="pb-3">Manage your Account</li>
+              <li class="pb-3">Create Account</li>
+            </ul>
+
+          </div>
+          <div class="mobile:block tablet:hidden w-full">
+            <div class=" w-full flex items-center justify-between   border-y border-textcolor py-5 ">
+              <p class="relative left-4 text-lg font-semibold">Product</p>
+              <i class="fa-solid fa-plus text-3xl font-normal relative right-4"></i>
+            </div>
+            <div class=" w-full flex items-center justify-between py-5 ">
+              <p class="relative left-4 text-lg font-semibold">Support</p>
+              <i class="fa-solid fa-plus text-3xl font-normal relative right-4"></i>
+            </div>
+            <div class=" w-full flex items-center justify-between   border-y border-textcolor py-5 ">
+              <p class="relative left-4 text-lg font-semibold">Company</p>
+              <i class="fa-solid fa-plus text-3xl font-normal relative right-4"></i>
+            </div>
+            <div class=" w-full flex items-center justify-between   border-b border-textcolor py-5 ">
+              <p class="relative left-4 text-lg font-semibold">Account</p>
+              <i class="fa-solid fa-plus text-3xl font-normal  relative right-4"></i>
+            </div>
+          </div>
+          <div
+            class=" flex flex-col relative mobile:left-0 smallaptop:left-5 desktop:left-20 mobile:items-center smallaptop:items-end">
+            <h2 class="text-2xl font-medium mobile:pt-6 smallaptop:pt-0 mobile:text-center smallaptop:text-right">
+              Subscribe to our
+              latest
+              <br class="mobile:hidden smallaptop:block">new and offers
+            </h2>
+            <button
+              class="relative top-4 h-10 w-28 bg-black border-0 rounded-full font-semibold text-lg text-white bg-lightgold">
+              Sign Up</button>
+          </div>
+        </div>
+        <div class="relative top-10 flex mobile:flex-col smallaptop:flex-row justify-center items-center ">
+          <div class="order-3 smallaptop:order-1">
+            <p class="relative smallaptop:right-28 desktop:right-52 text-xs">© 2022 RØDE All Rights Reserved.</p>
+          </div>
+          <div class="flex items-center mobile:order-1 smallaptop:order-2">
+            <p class="text-xs pr-3 border-r-2 border-textcolor">Privacy Policy</p>
+            <p class="text-xs pl-3">Terms & Conditions</p>
+          </div>
+          <div
+            class="relative smallaptop:left-28 desktop:left-52 order-2 smallaptop:order-3 mobile:py-3 smallaptop:py-0">
+            <i class="fa-brands fa-facebook text-2xl text-lightgold"></i>
+            <i class="fa-brands fa-twitter text-2xl text-lightgold pl-8"></i>
+            <i class="fa-brands fa-instagram text-2xl text-lightgold pl-8"></i>
+            <i class="fa-brands fa-youtube text-2xl text-lightgold pl-8"></i>
+            <i class="fa-brands fa-tiktok text-2xl text-lightgold pl-8"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
   </section>
 </body>
 
